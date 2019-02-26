@@ -7,6 +7,18 @@ body, html {
   padding: 0;
 }
 
+body {
+  background-image: url("../images/tableBois.jpg");
+  background-repeat: repeat;
+}
+
+.container-fluid {
+  width: 94vw;
+  margin-top: 5%;
+  padding: 2%;
+  background: #FFF;
+}
+
 .jumbotron {
   margin-top: 10px;
   height: 40vh;
@@ -14,19 +26,62 @@ body, html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.jumbotron .containImg {
+  border-radius: 3px 3px 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+}
+.jumbotron .containImg {
+  width: 98%;
+  height: 98%;
+}
+.jumbotron .containImg h1 {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.66);
-  color: #494c4d;
+  display: flex;
+  align-items: center;
+  font-family: "Merienda", cursive;
+  font-size: 6vw;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  mix-blend-mode: screen;
+  padding-left: 5%;
+}
+.jumbotron .img {
+  width: 45%;
+  height: 180%;
+  position: relative;
+  top: -45%;
+  align-self: stretch;
+  background-image: url("../images/orange_icon.svg");
+  background-size: cover;
+  background-position-y: 35%;
 }
 
-.mainHome #concert {
-  background-image: url("../images/concert.jpg");
+.nav {
+  margin-top: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #FFF;
+  z-index: 10;
+}
+.nav li {
+  width: 20%;
+  padding: 20px auto;
+}
+.nav li a {
+  color: #494c4d;
+  text-align: center;
+}
+
+.mainHome {
+  margin-top: 20px;
+}
+.mainHome .containEvent #concert {
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/concert2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
