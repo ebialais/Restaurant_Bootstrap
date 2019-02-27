@@ -83,7 +83,7 @@ body {
             color: $darkGrey;
             text-align: center;
             font-family: $sousTitre;
-            font-size: 120%;
+            font-size: 1.8vw;
             &:hover {
                 background-color: $orange;
                 color: $white;
@@ -220,14 +220,18 @@ form {
 }
 
 /*--------------------Gallerie----------------------*/
-
+#mainGallerie {
+    padding: 0!important;
+    
+}
 .photoContainer {
-    width: 94vw;
+    width: 100%;
     height: 800px;
+    margin:auto!important;
     .moyenneRow {
         height: 25%;
         width: 100%;
-        padding-left: 15px;
+        
     }
     .petiteRow {
         height: 20%;
@@ -303,7 +307,8 @@ form {
         background-image: url("../images/photo11.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position-x: center;
+        background-position-y: 65%;
     }
     #photo12 {
         background-image: url("../images/photo12.jpg");
@@ -340,5 +345,26 @@ form {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .photoContainer {
+        width: 94vw;
+    }
+    .moyenneRow {
+        height: 250px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .petiteRow {
+        height: 250px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .grandeRow {
+        height: 250px;
+        width: 100%;
+        padding-left: 15px;
     }
 }
