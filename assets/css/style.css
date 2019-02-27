@@ -8,17 +8,17 @@ body, html {
 }
 
 body {
-  background-image: url("../images/tableBois.jpg");
-  background-repeat: repeat;
+  background-color: #9fa09b;
 }
 
 .container-fluid {
   width: 94vw;
   margin-top: 5%;
   padding: 2%;
-  background: #FFF;
+  background: white;
 }
 
+/*-------------------header----------------------*/
 .jumbotron {
   margin-top: 10px;
   height: 40vh;
@@ -49,7 +49,7 @@ body {
   width: 45%;
   height: 180%;
   position: relative;
-  top: -45%;
+  top: -42.5%;
   align-self: stretch;
   background-image: url("../images/orange_icon.svg");
   background-size: cover;
@@ -60,7 +60,6 @@ body {
   margin-top: 0;
   width: 100%;
   height: 5vh;
-  background-color: #FFF;
   z-index: 10;
 }
 .nav li {
@@ -70,27 +69,34 @@ body {
 .nav li a {
   color: #494c4d;
   text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 120%;
 }
 .nav li a:hover {
   background-color: #f55628;
-  transform: scale(1.2);
+  color: white;
+  transform: scale(1.1);
   transition: 0.5s;
 }
 
 .petitMotPerso {
-  font-family: "Devonshire", cursive;
-  font-size: 4vw;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: 3vw;
   text-align: center;
   color: #f55628;
-  text-shadow: 2px 2px #898885;
+  text-shadow: 2px 2px #9fa09b;
   margin-top: 15px;
 }
 
+/*-------------------page principale----------------------*/
 .mainHome {
   margin-bottom: 20px;
 }
 .mainHome .panel {
   margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 120%;
 }
 .mainHome .panel img {
   width: 100%;
@@ -98,7 +104,14 @@ body {
 .mainHome .panel .panel-footer {
   margin-top: 20px;
 }
+.mainHome .panel .panel-footer .titre {
+  font-family: "Crimson Text", serif;
+}
 
+/*-------------------page restaurant----------------------*/
+.resto {
+  font-family: "Source Sans Pro", sans-serif;
+}
 .resto .panel-header {
   width: 100%;
   height: 500px;
@@ -117,7 +130,8 @@ body {
 }
 .resto .panel-body {
   height: 350px;
-  padding-top: 15px;
+  padding: 15px;
+  background-color: #FFF;
 }
 .resto .panel-footer {
   width: 100%;
@@ -139,11 +153,176 @@ body {
   background-position: center;
 }
 
+/*-------------------contact----------------------*/
 form {
   padding: 10px;
 }
 form label {
   padding: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 120%;
+}
+form select {
+  padding: 5px;
+  margin-left: 5px;
+}
+form legend {
+  width: 100%;
+}
+form button {
+  background-color: #f55628;
+  color: white;
+  box-shadow: 2px 2px #9fa09b;
+}
+form button:active {
+  transform: translateY(2px);
+  box-shadow: 2px 2px #9fa09b !important;
+  border: none !important;
+}
+
+/*-------------------carte----------------------*/
+.list-group {
+  margin: 2% !important;
+  padding-right: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.list-group .titre {
+  font-family: "Crimson Text", serif;
+  color: #494c4d;
+  font-size: 120%;
+}
+.list-group li {
+  border-radius: 0 !important;
+}
+.list-group .badge {
+  float: right;
+  background-color: #f55628;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*--------------------Gallerie----------------------*/
+.photoContainer {
+  width: 94vw;
+  height: 800px;
+}
+.photoContainer .moyenneRow {
+  height: 25%;
+  width: 100%;
+  padding-left: 15px;
+}
+.photoContainer .petiteRow {
+  height: 20%;
+  width: 100%;
+  padding-left: 15px;
+}
+.photoContainer .grandeRow {
+  height: 30%;
+  width: 100%;
+  padding-left: 15px;
+}
+.photoContainer #photo1 {
+  background-image: url("../images/photo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo2 {
+  background-image: url("../images/photo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo3 {
+  background-image: url("../images/photo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo4 {
+  background-image: url("../images/photo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo5 {
+  background-image: url("../images/photo5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo6 {
+  background-image: url("../images/photo6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo7 {
+  background-image: url("../images/photo7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo8 {
+  background-image: url("../images/photo8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo9 {
+  background-image: url("../images/photo9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo10 {
+  background-image: url("../images/photo10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo11 {
+  background-image: url("../images/photo11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo12 {
+  background-image: url("../images/photo12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo13 {
+  background-image: url("../images/photo13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo14 {
+  background-image: url("../images/photo14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo15 {
+  background-image: url("../images/photo15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo16 {
+  background-image: url("../images/photo16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photoContainer #photo17 {
+  background-image: url("../images/photo17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

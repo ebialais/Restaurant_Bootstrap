@@ -1,6 +1,12 @@
 $orange: #f55628;
 $darkGrey: #494c4d;
-$lightGrey: #898885;
+$lightGrey: #9fa09b;
+$white: rgba(255, 255, 255);
+
+$titre: 'Devonshire', cursive;
+$sousTitre: 'Crimson Text', serif;
+$text: 'Source Sans Pro', sans-serif;
+
 
 * {
     box-sizing: border-box;
@@ -12,16 +18,21 @@ body, html {
 }
 
 body {
-    background-image: url('../images/tableBois.jpg');
-    background-repeat: repeat;
+    background-color: $lightGrey;
+    // background-image: url('../images/tableauNoir.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 }
 
 .container-fluid {
     width: 94vw;
     margin-top : 5%;
     padding : 2%;
-    background: #FFF;
+    background: $white;
 }
+
+/*-------------------header----------------------*/
 
 .jumbotron {
     margin-top: 10px;
@@ -40,9 +51,9 @@ body {
             height: 100%;
             display: flex;
             align-items: center;
-            font-family: 'Devonshire', cursive;
+            font-family: $titre;
             font-size: 8.5vw;
-            background: rgba(255, 255, 255, 0.90);
+            background: rgba(255, 255, 255, 0.9);
             color: black;
             mix-blend-mode: screen;
             padding-left: 5%;
@@ -52,7 +63,7 @@ body {
         width: 45%;
         height : 180%;
         position: relative;
-        top: -45%;
+        top: -42.5%;
         align-self: stretch;
         background-image: url('../images/orange_icon.svg');
         background-size: cover;
@@ -64,7 +75,6 @@ body {
     margin-top: 0;
     width: 100%;
     height: 5vh;
-    background-color: #FFF;
     z-index:10;
     li{
         width: 20%;
@@ -72,9 +82,12 @@ body {
         a {
             color: $darkGrey;
             text-align: center;
+            font-family: $sousTitre;
+            font-size: 120%;
             &:hover {
                 background-color: $orange;
-                transform : scale(1.2);
+                color: $white;
+                transform : scale(1.1);
                 transition : 0.5s;
             }
             
@@ -82,27 +95,37 @@ body {
     }
 }
 .petitMotPerso {
-    font-family: 'Devonshire', cursive;
-    font-size: 4vw;
+    font-family: $sousTitre;
+    font-weight: bold;
+    font-size: 3vw;
     text-align: center;
     color: $orange;
     text-shadow: 2px 2px $lightGrey;
     margin-top: 15px;
 }
+
+/*-------------------page principale----------------------*/
 .mainHome {
     margin-bottom: 20px;
     .panel {
         margin-top: 10px;
+        font-family: $text;
+        font-size: 120%;
         img {
             width: 100%;
         }
         .panel-footer {
             margin-top: 20px;
+            .titre {
+                font-family: $sousTitre;
+            }
         }
     }
 }
 
+/*-------------------page restaurant----------------------*/
 .resto {
+    font-family: $text;
     .panel-header {
         width: 100%;
         height: 500px;
@@ -121,7 +144,8 @@ body {
     }
     .panel-body {
         height: 350px;
-        padding-top: 15px;
+        padding: 15px;
+        background-color: #FFF;
     }
     .panel-footer {
         width: 100%;
@@ -144,9 +168,177 @@ body {
     }
 }
 
+/*-------------------contact----------------------*/
+
 form {
     padding: 10px;
     label {
         padding : 5px;
+        font-family: $text;
+        font-size: 120%;
+    }
+    select {
+        padding: 5px;
+        margin-left: 5px;
+    }
+    legend {
+        width: 100%;
+    }
+    button {
+        background-color: $orange;
+        color: $white;
+        box-shadow: 2px 2px $lightGrey;
+        &:active {
+            transform: translateY(2px);
+            box-shadow: 2px 2px $lightGrey!important;
+            border: none!important;
+        }
+    }
+}
+
+/*-------------------carte----------------------*/
+.list-group {
+    margin: 2%!important;
+    padding-right: 0;
+    font-family: $text;
+    .titre {
+        font-family: $sousTitre;
+        color: $darkGrey;
+        font-size: 120%;
+    }
+    li {
+        border-radius: 0!important;
+    }
+    .badge {
+        float: right;
+        background-color: $orange;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+/*--------------------Gallerie----------------------*/
+
+.photoContainer {
+    width: 94vw;
+    height: 800px;
+    .moyenneRow {
+        height: 25%;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .petiteRow {
+        height: 20%;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .grandeRow {
+        height: 30%;
+        width: 100%;
+        padding-left: 15px;
+    }
+    #photo1 {
+        background-image: url("../images/photo1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo2 {
+        background-image: url("../images/photo2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo3 {
+        background-image: url("../images/photo3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo4 {
+        background-image: url("../images/photo4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo5 {
+        background-image: url("../images/photo5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo6 {
+        background-image: url("../images/photo6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo7 {
+        background-image: url("../images/photo7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo8 {
+        background-image: url("../images/photo8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo9 {
+        background-image: url("../images/photo9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo10 {
+        background-image: url("../images/photo10.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo11 {
+        background-image: url("../images/photo11.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo12 {
+        background-image: url("../images/photo12.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo13 {
+        background-image: url("../images/photo13.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo14 {
+        background-image: url("../images/photo14.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo15 {
+        background-image: url("../images/photo15.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo16 {
+        background-image: url("../images/photo16.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #photo17 {
+        background-image: url("../images/photo17.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
