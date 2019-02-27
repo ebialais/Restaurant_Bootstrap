@@ -1,14 +1,13 @@
-window.onload = function() {
-    // let nav = document.querySelector('nav');
-    // let ul = document.createElement('ul');
-    // nav.appendChild(ul);
+// let user = document.getElementById("utilisateur");
+// let nom = prompt("Bonjour, quel est ton nom ?");
 
-    // let a = document.createElement('a');
-    // ul.appendChild(a);
-    // ul.appendChild(a);
-    // ul.appendChild(a);
-    // ul.appendChild(a);
+// affiche = function (a){
+//     user.innerHTML = a;
+// }
 
 
+// window.onload = function() {
+//     affiche(nom)
 
-}
+
+// }

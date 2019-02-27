@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./assets/images/orange_icon.png" /> 
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Merienda:700|Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Devonshire|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js"></script>
     <title>Le Bistro du Coin</title>
@@ -47,22 +47,34 @@
     </div>
     
     <main class="container-fluid mainHome">
-        <section>
-            <p id="accueil">Bonjour <span id="utilisateur">Utilisateur</span> et bien venu sur le site des <i>Bistros du coin</i>.</p>
+        <section class="petitMotPerso">
+            <p id="accueil">Bonjour <span id="utilisateur">Utilisateur</span> et bienvenu sur le site des <i>Bistros du coin</i>.</p>
         </section>
-        <section class="containEvent card">
-            <div id="concert" class="image"></div>
-            <h2 class="event">Ne ratez pas nos évenements</h2>
-            <h3 class="event">Concerts</h3>
-            <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </section>
-        <section class="promo card">
-            <div id="happyHour" class="image">
-                <!-- <img class="card-img-top" src="./assets/images/happyHour.jpg" alt="happy hour image" /> -->
-            </div>
-            <h2 class="event">Les promotions du moment</h2>
-            <h3 class="event">Happy Hours</h3>
-            <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <section class="row events">
+                <div class="col-sm-12 col-md-6">
+                    <div class="panel panel-default fixed-width center-block">
+                        <div class="panel-body">
+                        <img class="img-responsive center-block" src='./assets/images/concert2.jpg' />
+                        </div>
+                        <div class="panel-footer">
+                        <h3>Ne ratez pas nos Events</h3>
+                        <p><b>Conserts: </b>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="panel panel-default fixed-width center-block">
+                        <div class="panel-body">
+                        <img class="img-responsive center-block" src='./assets/images/happyHour.jpg' />
+                        </div>
+                        <div class="panel-footer">
+                        <h3>Les promotions du moment</h3>
+                        <p><b>Happy Hours: </b>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 

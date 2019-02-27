@@ -38,8 +38,8 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  font-family: "Merienda", cursive;
-  font-size: 6vw;
+  font-family: "Devonshire", cursive;
+  font-size: 8.5vw;
   background: rgba(255, 255, 255, 0.9);
   color: black;
   mix-blend-mode: screen;
@@ -71,17 +71,79 @@ body {
   color: #494c4d;
   text-align: center;
 }
+.nav li a:hover {
+  background-color: #f55628;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.petitMotPerso {
+  font-family: "Devonshire", cursive;
+  font-size: 4vw;
+  text-align: center;
+  color: #f55628;
+  text-shadow: 2px 2px #898885;
+  margin-top: 15px;
+}
 
 .mainHome {
+  margin-bottom: 20px;
+}
+.mainHome .panel {
+  margin-top: 10px;
+}
+.mainHome .panel img {
+  width: 100%;
+}
+.mainHome .panel .panel-footer {
   margin-top: 20px;
 }
-.mainHome .containEvent #concert {
-  width: 50%;
-  height: 100%;
-  background-image: url("../images/concert2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+
+.resto .panel-header {
+  width: 100%;
+  height: 500px;
+}
+.resto #imgRestoBxl {
+  background-image: url("../images/PasrestoBruxelles.jpg");
   background-size: cover;
+}
+.resto #imgRestoParis {
+  background-image: url("../images/restoParis.jpg");
+  background-size: cover;
+}
+.resto #imgRestoTokyo {
+  background-image: url("../images/restoTokyo.jpg");
+  background-size: cover;
+}
+.resto .panel-body {
+  height: 350px;
+  padding-top: 15px;
+}
+.resto .panel-footer {
+  width: 100%;
+  height: 300px;
+}
+.resto #mapBruxelles {
+  background-image: url("../images/mapBruxelles.png");
+  background-size: cover;
+  background-position: center;
+}
+.resto #mapParis {
+  background-image: url("../images/mapParis.png");
+  background-size: cover;
+  background-position: center;
+}
+.resto #mapTokyo {
+  background-image: url("../images/mapTokyo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  padding: 10px;
+}
+form label {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
