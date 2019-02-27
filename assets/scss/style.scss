@@ -24,6 +24,9 @@ body {
     // background-size: cover;
     // background-position: center;
 }
+.row {
+    margin: 0;
+}
 
 .container-fluid {
     width: 94vw;
@@ -101,7 +104,7 @@ body {
     text-align: center;
     color: $orange;
     text-shadow: 2px 2px $lightGrey;
-    margin-top: 15px;
+    padding: 4%;
 }
 
 /*-------------------page principale----------------------*/
@@ -220,28 +223,26 @@ form {
 }
 
 /*--------------------Gallerie----------------------*/
-#mainGallerie {
-    padding: 0!important;
-    
-}
 .photoContainer {
     width: 100%;
     height: 800px;
-    margin:auto!important;
+    margin: auto!important;
+    @media screen and (max-width: 767px) {
+        height: 4000px;
+    }
     .moyenneRow {
         height: 25%;
         width: 100%;
-        
     }
     .petiteRow {
         height: 20%;
         width: 100%;
-        padding-left: 15px;
+        //padding-left: 15px;
     }
     .grandeRow {
         height: 30%;
         width: 100%;
-        padding-left: 15px;
+        //padding-left: 15px;
     }
     #photo1 {
         background-image: url("../images/photo1.jpg");
@@ -348,23 +349,4 @@ form {
     }
 }
 
-@media screen and (min-width: 992px) {
-    .photoContainer {
-        width: 94vw;
-    }
-    .moyenneRow {
-        height: 250px;
-        width: 100%;
-        padding-left: 15px;
-    }
-    .petiteRow {
-        height: 250px;
-        width: 100%;
-        padding-left: 15px;
-    }
-    .grandeRow {
-        height: 250px;
-        width: 100%;
-        padding-left: 15px;
-    }
-}
+
