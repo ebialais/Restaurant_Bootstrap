@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="./assets/images/orange_icon.png" /> 
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Devonshire|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/map.js"></script>
     <title>Les différents Bistro du Coin</title>
 </head>
 <body>
@@ -47,7 +48,10 @@
             
     <main class="container-fluid mainResto">
         <section class="petitMotPerso">
-            Vous cherchez un restaurant ?</p>
+            <p>Vous cherchez un restaurant ?</p>
+            <div id="ici"></div>
+            <div id="ParisBxl"></div>
+            <div id="Tokyo"></div>
         </section>
     
         <section class="row resto" >
@@ -61,13 +65,14 @@
                         188, Rue Antoine Dansaert - 1000 Bruxelles <br /><br />
                         <b>heures d'ouverture:</b><br />
                         lundi : fermé<br />
-                        mardi : 11h30 à 23h30<br />
-                        mercredi : 11h30 à 23h30<br />
-                        jeudi : 11h30 à 23h30<br />
-                        vendredi : 11h30 à 2h30<br /> 
-                        samedi : 11h30 à 2h30<br /> 
-                        dimanche : 11h30 à 23h30<br /> 
+                        mardi : 11h00 à 1h00<br />
+                        mercredi : 11h00 à 1h00<br />
+                        jeudi : 11h00 à 1h00<br />
+                        vendredi : 11h00 à 1h00<br /> 
+                        samedi : 11h00 à 1h00<br /> 
+                        dimanche : 11h00 à 1h00<br /> 
                     </p>
+                    <div id="bxlOuvert"></div>
                     </div>
                     <div class="panel-footer" id="mapBruxelles">
                         <!-- <iframe src="https://www.google.be/maps/place/Rue+Antoine+Dansaert+188,+1000+Bruxelles/@50.8527606,4.3397202,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c389465acf87:0xc4562b9c159da335!8m2!3d50.8527572!4d4.3419089"></iframe> -->
@@ -85,13 +90,14 @@
                         1, rue de Bruxelles - 75009 Paris <br /><br />
                         <b>heures d'ouverture:</b><br />
                         lundi : fermé<br />
-                        mardi : 11h30 à 23h30<br />
-                        mercredi : 11h30 à 23h30<br />
-                        jeudi : 11h30 à 23h30<br />
-                        vendredi : 11h30 à 2h30<br /> 
-                        samedi : 11h30 à 2h30<br /> 
-                        dimanche : 11h30 à 23h30<br /> 
+                        mardi : 11h00 à 1h00<br />
+                        mercredi : 11h00 à 1h00<br />
+                        jeudi : 11h00 à 1h00<br />
+                        vendredi : 11h00 à 1h00<br /> 
+                        samedi : 11h00 à 1h00<br /> 
+                        dimanche : 11h00 à 1h00<br /> 
                     </p>
+                    <div id="parisOuvert"></div>
                     </div>
                     <div class="panel-footer" id="mapParis">
                         <!-- <iframe src="https://www.google.be/maps/place/Rue+de+Bruxelles,+75009+Paris,+France/@48.8832608,2.3305656,16.98z/data=!4m5!3m4!1s0x47e66e4e9e93c6e1:0x3db5bcd75e6c77ff!8m2!3d48.8832775!4d2.3305504"></iframe> -->
@@ -109,13 +115,14 @@
                         2-20-16, Yoyogi, Shibuya, Tokyo 151-0053<br /><br />
                         <b>heures d'ouverture:</b><br />
                         lundi : fermé<br />
-                        mardi : 11h30 à 23h30<br />
-                        mercredi : 11h30 à 23h30<br />
-                        jeudi : 11h30 à 23h30<br />
-                        vendredi : 11h30 à 2h30<br /> 
-                        samedi : 11h30 à 2h30<br /> 
-                        dimanche : 11h30 à 23h30<br /> 
+                        mardi : 11h00 à 1h00<br />
+                        mercredi : 11h00 à 1h00<br />
+                        jeudi : 11h00 à 1h00<br />
+                        vendredi : 11h00 à 1h00<br /> 
+                        samedi : 11h00 à 1h00<br /> 
+                        dimanche : 11h00 à 1h00<br /> 
                     </p>
+                    <div id="tokyoOuvert"></div>
                     </div>
                     <div class="panel-footer" id="mapTokyo">
                         <!-- <iframe src="https://www.google.be/maps/place/2+Chome-20-16+Yoyogi,+Shibuya-ku,+T%C5%8Dky%C5%8D-to+151-0053,+Japan/@35.6862988,139.6975269,17z/data=!4m5!3m4!1s0x60188cd1ee55cc99:0xa3e629f6e7d38ff0!8m2!3d35.6865297!4d139.6970226"></iframe> -->

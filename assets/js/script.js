@@ -2,7 +2,7 @@ let nom = prompt('Bonjour, quel est votre nom ? ', ' ');
 
 
 if ( (nom == ' ') || (nom == null) ) {
-    nom = "Bob";
+    nom = "bel(le) inconnu(e)";
     }
 
 //document.write("<H2>Bonjour " + nom + " ! Bienvenu(e) au Bistro du coin. </H2>");
