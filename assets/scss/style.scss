@@ -349,4 +349,54 @@ form {
     }
 }
 
-
+/*-------------------footer-----------------------*/
+footer {
+    width: 94vw;
+    height: 22vh;
+    margin: 5% auto;
+    background-color: $darkGrey;
+    color: $lightGrey;
+    text-shadow: 1px 1px black;
+    font-family: $sousTitre;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    .left {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100vw;
+        .icon {
+            display: flex;
+            flex-direction: row;
+            padding-right: 10%;
+            a{
+                text-decoration: none;
+                margin: 5%;
+                .fab{
+                    font-size: 3vw;
+                    color:$lightGrey;
+                    //padding: 10%;
+                    text-align: center;
+                    p {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }    
+    .img{
+        background-image: url('../images/icon.svg');
+        background-size: 20%;
+        background-position-y: 35%;
+        background-repeat: no-repeat;
+        height : 300%;
+        width: 200%;
+        position: relative;
+        bottom: 295%;
+        left: 10%;
+        align-self: stretch;
+        transform: rotate(-90deg);
+    }
+}

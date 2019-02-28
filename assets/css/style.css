@@ -333,4 +333,55 @@ form button:active {
   background-position: center;
 }
 
+/*-------------------footer-----------------------*/
+footer {
+  width: 94vw;
+  height: 22vh;
+  margin: 5% auto;
+  background-color: #494c4d;
+  color: #9fa09b;
+  text-shadow: 1px 1px black;
+  font-family: "Crimson Text", serif;
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100vw;
+}
+footer .left .icon {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10%;
+}
+footer .left .icon a {
+  text-decoration: none;
+  margin: 5%;
+}
+footer .left .icon a .fab {
+  font-size: 3vw;
+  color: #9fa09b;
+  text-align: center;
+}
+footer .left .icon a .fab p {
+  font-size: 2vw;
+}
+footer .img {
+  background-image: url("../images/icon.svg");
+  background-size: 20%;
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  height: 300%;
+  width: 200%;
+  position: relative;
+  bottom: 295%;
+  left: 10%;
+  align-self: stretch;
+  transform: rotate(-90deg);
+}
+
 /*# sourceMappingURL=style.css.map */
