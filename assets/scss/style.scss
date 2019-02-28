@@ -191,6 +191,14 @@ form {
         background-color: $orange;
         color: $white;
         box-shadow: 2px 2px $lightGrey;
+        width: 200px;
+        // .glyphicon-envelope::before {
+        //     color: $white;
+        //     font-size: 2em;
+        //     font-style: normal;
+        //     font-weight: normal;
+        //     position: relative;
+        // }
         &:active {
             transform: translateY(2px);
             box-shadow: 2px 2px $lightGrey!important;

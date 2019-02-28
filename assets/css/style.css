@@ -177,6 +177,7 @@ form button {
   background-color: #f55628;
   color: white;
   box-shadow: 2px 2px #9fa09b;
+  width: 200px;
 }
 form button:active {
   transform: translateY(2px);
