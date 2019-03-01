@@ -50,6 +50,11 @@ body {
   border-width: 2px 0;
   display: flex;
 }
+.jumbotron .containImg:hover {
+  border-color: #f55628;
+  border-width: 6px 0;
+  transition: 0.5s;
+}
 .jumbotron .containImg h1 {
   height: 100%;
   display: flex;
@@ -64,9 +69,17 @@ body {
 .jumbotron .containImg h1 img {
   width: 15vw;
 }
+.jumbotron .containImg h1:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.jumbotron .containImg h1:hover img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
 nav {
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
   background-color: white;
   padding-top: 2%;
@@ -203,9 +216,6 @@ form label {
 form select {
   padding: 5px;
   margin-left: 5px;
-}
-form .rox .choix {
-  width: 100%;
 }
 form .btn {
   background-color: #e4e4e3;
