@@ -96,14 +96,17 @@ nav {
     padding-top: 2%;
     li{
         width: 20%;
-        //padding : 20px auto;
+        @media screen and (max-width: 500px ) {
+            width : 94vw;
+            margin: auto;
+        }
         a {
             color: $darkGrey;
             text-align: center;
             font-family: $sousTitre;
             font-size: 2vw;
             @media screen and (max-width: 500px){
-                font-size: 12px;
+                font-size: 16px;
             }
             &:hover {
                 background-color: $orange;
@@ -153,12 +156,16 @@ nav {
     font-weight: normal;
     color: $darkGrey;
     text-shadow: none;
+    @media screen and (max-width: 500px ) {
+        font-size : 16px;
+    }
 }
 
 
 .resto {
     font-family: $text;
     color: $darkGrey;
+    width: 100%;
     .panel-header {
         width: 100%;
         height: 500px;
@@ -185,27 +192,34 @@ nav {
     .panel-footer {
         width: 100%;
         height: 300px;
+        margin-bottom: 5%;
     }
     #mapBruxelles {
         background-image: url('../images/bruxelles.webp');
         background-size: cover;
         background-position: center;
+        width : 100%;
     }
     #mapParis {
         background-image: url('../images/paris.webp');
         background-size: cover;
         background-position: center;
+        width : 100%;
     }
     #mapTokyo {
         background-image: url('../images/tokyo.webp');
         background-size: cover;
         background-position: center;
+        width : 100%;
     }
     #bxlOuvert, #parisOuvert, #tokyoOuvert {
         color: $darkGrey;
         font-size: 1.2vw;
         font-weight: bold;
         text-shadow: 1px 1px $lightGrey;
+        @media screen and (max-width: 500px ) {
+            font-size : 16px;
+        }
     }
 }
 
@@ -223,15 +237,23 @@ form {
         padding: 5px;
         margin-left: 5px;
     }
-    /* .glyphicon {
-        color: $white;
-        font-size: 2em;
-        line-height : 2em;
-        width: 3em;
-        font-style: normal;
-        font-weight: normal;
-        position: relative;
-    } */
+    // .glyphicon {
+    //     color: $darkGrey;
+    //     // font-size: 2em;
+    //     // line-height : 2em;
+    //     // width: 3em;
+    //     // font-style: normal;
+    //     // font-weight: normal;
+    //     // position: relative;
+    // }
+    .glyphicon-send:before {
+        content: "\e171";
+        color: $darkGrey;
+    }
+    
+    .glyphicon-send:before {
+        content: "\e171";
+    }
     .btn {
         background-color: $lightGrey2;
         color: black;

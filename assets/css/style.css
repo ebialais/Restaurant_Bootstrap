@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -87,6 +88,12 @@ nav {
 nav li {
   width: 20%;
 }
+@media screen and (max-width: 500px) {
+  nav li {
+    width: 94vw;
+    margin: auto;
+  }
+}
 nav li a {
   color: #494c4d;
   text-align: center;
@@ -95,7 +102,7 @@ nav li a {
 }
 @media screen and (max-width: 500px) {
   nav li a {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 nav li a:hover {
@@ -144,10 +151,16 @@ nav li a:hover {
   color: #494c4d;
   text-shadow: none;
 }
+@media screen and (max-width: 500px) {
+  #ici, #ParisBxl, #Tokyo {
+    font-size: 16px;
+  }
+}
 
 .resto {
   font-family: "Source Sans Pro", sans-serif;
   color: #494c4d;
+  width: 100%;
 }
 .resto .panel-header {
   width: 100%;
@@ -175,21 +188,25 @@ nav li a:hover {
 .resto .panel-footer {
   width: 100%;
   height: 300px;
+  margin-bottom: 5%;
 }
 .resto #mapBruxelles {
   background-image: url("../images/bruxelles.webp");
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 .resto #mapParis {
   background-image: url("../images/paris.webp");
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 .resto #mapTokyo {
   background-image: url("../images/tokyo.webp");
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 .resto #bxlOuvert, .resto #parisOuvert, .resto #tokyoOuvert {
   color: #494c4d;
@@ -197,19 +214,15 @@ nav li a:hover {
   font-weight: bold;
   text-shadow: 1px 1px #9fa09b;
 }
+@media screen and (max-width: 500px) {
+  .resto #bxlOuvert, .resto #parisOuvert, .resto #tokyoOuvert {
+    font-size: 16px;
+  }
+}
 
 /*-------------------contact----------------------*/
 form {
   padding: 0 10% 5% 10%;
-  /* .glyphicon {
-      color: $white;
-      font-size: 2em;
-      line-height : 2em;
-      width: 3em;
-      font-style: normal;
-      font-weight: normal;
-      position: relative;
-  } */
 }
 form label {
   padding: 5px;
@@ -218,6 +231,13 @@ form label {
 form select {
   padding: 5px;
   margin-left: 5px;
+}
+form .glyphicon-send:before {
+  content: "";
+  color: #494c4d;
+}
+form .glyphicon-send:before {
+  content: "";
 }
 form .btn {
   background-color: #e4e4e3;
