@@ -1,6 +1,7 @@
 $orange: #f55628;
 $darkGrey: #494c4d;
 $lightGrey: #9fa09b;
+$lightGrey2:rgb(228, 228, 227);
 $white: rgba(255, 255, 255);
 
 $titre: 'Devonshire', cursive;
@@ -222,7 +223,7 @@ form {
         position: relative;
     } */
     .btn {
-        background-color: $lightGrey;
+        background-color: $lightGrey2;
         color: black;
         box-shadow: 2px 2px $orange;
         width: 200px!important;
@@ -390,7 +391,7 @@ form {
     height: 34vh;
     margin: 0 0 5% 0 ;
     background-color: $darkGrey;
-    color: $lightGrey;
+    color: $lightGrey2;
     text-shadow: 1px 1px black;
     font-family: $sousTitre;
     padding-top: 1%;
@@ -418,7 +419,7 @@ form {
             margin: 1%;
             .fab {
                 text-decoration: none;
-                color:$lightGrey;
+                color:$lightGrey2;
                 font-size: 3.5vw;
                 @media screen and (max-width: 500px) {
                     font-size: 40px;
