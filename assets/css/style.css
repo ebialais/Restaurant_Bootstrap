@@ -10,7 +10,7 @@ body, html {
 
 body {
   background-color: #9fa09b;
-  background-image: url("../images/tableBois.jpg");
+  background-image: url("../images/tableBois.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@ body {
 /*-------------------header----------------------*/
 .jumbotron {
   height: 40vh;
-  background-image: url("../images/Jumbo.jpg");
+  background-image: url("../images/Jumbo.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,7 +97,7 @@ nav li a:hover {
   font-weight: bold;
   font-size: 3vw;
   text-align: center;
-  color: #f55628;
+  color: #494c4d;
   text-shadow: 2px 2px #9fa09b;
   padding: 4%;
 }
