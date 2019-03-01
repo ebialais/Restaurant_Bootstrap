@@ -2,10 +2,15 @@
 
 Le travail a réaliser est un site vitrine d'une franchise (fictive) de restaurants. 
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ![Aprecu grand ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20grand.png)
 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 ![Aprecu petit ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20petit.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 
 
