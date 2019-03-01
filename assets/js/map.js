@@ -1,8 +1,7 @@
 window.onload = function (){
     let timeUser = new Date();
     let UTCMin = timeUser.getMinutes();
-    // let UTCTime = timeUser.getUTCDate();
-    // let UTCtxt = timeUser.toUTCString();
+
 
     
     const date = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
@@ -13,9 +12,8 @@ window.onload = function (){
 
     function TokyoTime(user, d) {
         let TokyoHour;
-        let TokyoDate;
+        let TokyoJour;
         let UTCHour = user.getUTCHours();
-        // const jour = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
 
         
         if (UTCHour < 15) {
@@ -35,17 +33,16 @@ window.onload = function (){
         document.getElementById('Tokyo').textContent = TokyoTxt;
         
         if (TokyoJour != 1 && (TokyoHour > 11 || TokyoHour < 1)){
-            document.getElementById('tokyoOuvert').textContent = "Le Bistro du coin est ouvert."
+            document.getElementById('tokyoOuvert').textContent = "Le Bistro du coin est actuellement ouvert."
         } else {
-            document.getElementById('tokyoOuvert').textContent = "Le Bistro du coin est fermé."
+            document.getElementById('tokyoOuvert').textContent = "Le Bistro du coin est actuellement fermé."
         }
     }
 
     function BxlParisTime(user, d) {
         let BxlParisHour;
-        let BxlParisDate;
+        let BxlParisJour;
         let UTCHour = user.getUTCHours();
-        // const jour = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
 
         if (UTCHour < 23) {
             BxlParisHour = UTCHour + 1;
@@ -59,19 +56,16 @@ window.onload = function (){
             UTCMin = "0" + UTCMin;
         }
 
-
-        // const d = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
-
         let BxlParisTxt = "A Bruxelles et à Paris, nous sommes " + BxlParisJour + " et il est " + BxlParisHour + "h" + UTCMin + ".";
 
         document.getElementById('ParisBxl').textContent = BxlParisTxt;
 
         if (BxlParisJour != 1 && (BxlParisHour > 11 || BxlParisHour < 1)){
-            document.getElementById('bxlOuvert').textContent = "Le Bistro du coin est ouvert."
-            document.getElementById('parisOuvert').textContent = "Le Bistro du coin est ouvert."
+            document.getElementById('bxlOuvert').textContent = "Le Bistro du coin est actuellement ouvert."
+            document.getElementById('parisOuvert').textContent = "Le Bistro du coin est actuellement ouvert."
         } else {
-            document.getElementById('bxlOuvert').textContent = "Le Bistro du coin est fermé."
-            document.getElementById('parisOuvert').textContent = "Le Bistro du coin est fermé."
+            document.getElementById('bxlOuvert').textContent = "Le Bistro du coin est actuellement fermé."
+            document.getElementById('parisOuvert').textContent = "Le Bistro du coin est actuellement fermé."
         }
     }
 

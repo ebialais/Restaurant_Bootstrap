@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Le Bistro du Coin" content="Site interent de la franchise Le Bistro du coin">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,35 +17,34 @@
     <title>Le Bistro du Coin</title>
 </head>
 <body>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carte.html">Carte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallerie.html">Gallerie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">Restaurants</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li> 
+        </ul>
+    </nav>
     <div class="container-fluid">
         <header class="jumbotron">
-            <div id='Bonjour'></div>
             <div class="containImg">
                 <h1 class="display-4">
                     Le Bistro du coin.
+                    <img src='./assets/images/orange_icon-svg.webp' alt="Icon">
                 </h1>
             </div>
-            <div class="img"></div>
         </header>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="carte.html">La Carte</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallerie.html">Gallerie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="restaurant.html">Restaurants</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacts</a>
-                </li> 
-            </ul>
-        </nav>
     </div>
     
     <main class="container-fluid mainHome">
@@ -53,40 +53,40 @@
         </section>
 
         <section class="row events">
-                <div class="col-sm-12 col-md-6">
-                    <div class="panel panel-default fixed-width center-block">
-                        <div class="panel-body">
-                        <img class="img-responsive center-block" src='./assets/images/concert2.jpg' />
-                        </div>
-                        <div class="panel-footer">
-                        <h3 class="titre">Ne ratez pas nos Events</h3>
-                        <p><b>Concerts: </b>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="panel panel-default fixed-width center-block">
+                    <div class="panel-body">
+                    <img class="img-responsive center-block" src='./assets/images/concert2.jpg' />
+                    </div>
+                    <div class="panel-footer">
+                    <h3 class="titre">Ne ratez pas nos Events</h3>
+                    <p><b>Concerts: </b>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-12 col-md-6">
-                    <div class="panel panel-default fixed-width center-block">
-                        <div class="panel-body">
-                        <img class="img-responsive center-block" src='./assets/images/happyHour.jpg' />
-                        </div>
-                        <div class="panel-footer">
-                        <h3 class="titre">Les promotions du moment</h3>
-                        <p><b>Happy Hours: </b>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="panel panel-default fixed-width center-block">
+                    <div class="panel-body">
+                    <img class="img-responsive center-block" src='./assets/images/happyHour.jpg' />
+                    </div>
+                    <div class="panel-footer">
+                    <h3 class="titre">Les promotions du moment</h3>
+                    <p><b>Happy Hours: </b>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="container-fluid footer">
         <div class="left">
-            <h3>Rejoins <i>Le Bistro du coin :</i></h3>
+            <i class="fas fa-utensils"></i>
+            <h3>Rejoins <i>Le Bistro du coin</i></h3>
             <div class="icon">
-                <a href="facebook.com"><i class="fab fa-facebook"><p>Facebook</p></i></a>
-                <a href="twitter.com"><i class="fab fa-twitter-square"><p>Twitter</p></i></a>
+                <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="twitter.com"><i class="fab fa-twitter-square"></i></a>
             </div>
         </div>
-        <div class="img"></div>
     </footer>
 </body>
 </html>

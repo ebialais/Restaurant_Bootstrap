@@ -5,10 +5,15 @@
 body, html {
   margin: 0;
   padding: 0;
+  max-width: 1800px;
 }
 
 body {
   background-color: #9fa09b;
+  background-image: url("../images/tableBois.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .row {
@@ -16,15 +21,12 @@ body {
 }
 
 .container-fluid {
-  width: 94vw;
-  margin-top: 5%;
   padding: 2%;
   background: white;
 }
 
 /*-------------------header----------------------*/
 .jumbotron {
-  margin-top: 10px;
   height: 40vh;
   background-image: url("../images/Jumbo.jpg");
   background-repeat: no-repeat;
@@ -34,49 +36,56 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 580px) {
+  .jumbotron {
+    height: 200px;
+  }
+}
 .jumbotron .containImg {
   width: 98%;
-  height: 98%;
+  height: 100%;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: #494c4d;
+  border-width: 2px 0;
+  display: flex;
 }
 .jumbotron .containImg h1 {
   height: 100%;
   display: flex;
   align-items: center;
   font-family: "Devonshire", cursive;
-  font-size: 8.5vw;
+  font-size: 7vw;
   background: rgba(255, 255, 255, 0.9);
   color: black;
   mix-blend-mode: screen;
   padding-left: 5%;
 }
-.jumbotron .img {
-  width: 45%;
-  height: 180%;
-  position: relative;
-  top: -42.5%;
-  align-self: stretch;
-  background-image: url("../images/orange_icon.svg");
-  background-size: cover;
-  background-position-y: 35%;
+.jumbotron .containImg h1 img {
+  width: 15vw;
 }
 
-.nav {
-  margin-top: 0;
+nav {
+  margin-top: 5%;
   width: 100%;
-  height: 5vh;
-  z-index: 10;
+  background-color: white;
+  padding-top: 2%;
 }
-.nav li {
+nav li {
   width: 20%;
-  padding: 20px auto;
 }
-.nav li a {
+nav li a {
   color: #494c4d;
   text-align: center;
   font-family: "Crimson Text", serif;
-  font-size: 1.8vw;
+  font-size: 2vw;
 }
-.nav li a:hover {
+@media screen and (max-width: 500px) {
+  nav li a {
+    font-size: 12px;
+  }
+}
+nav li a:hover {
   background-color: #f55628;
   color: white;
   transform: scale(1.1);
@@ -92,11 +101,13 @@ body {
   text-shadow: 2px 2px #9fa09b;
   padding: 4%;
 }
+@media screen and (max-width: 500px) {
+  .petitMotPerso {
+    font-size: 16px;
+  }
+}
 
 /*-------------------page principale----------------------*/
-.mainHome {
-  margin-bottom: 20px;
-}
 .mainHome .panel {
   margin-top: 10px;
   font-family: "Source Sans Pro", sans-serif;
@@ -113,8 +124,17 @@ body {
 }
 
 /*-------------------page restaurant----------------------*/
+#ici, #ParisBxl, #Tokyo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5vw;
+  font-weight: normal;
+  color: #9fa09b;
+  text-shadow: none;
+}
+
 .resto {
   font-family: "Source Sans Pro", sans-serif;
+  color: #494c4d;
 }
 .resto .panel-header {
   width: 100%;
@@ -133,8 +153,8 @@ body {
   background-size: cover;
 }
 .resto .panel-body {
-  height: 350px;
-  padding: 15px;
+  height: 380px;
+  padding: 5%;
   background-color: #FFF;
 }
 .resto .panel-footer {
@@ -156,30 +176,45 @@ body {
   background-size: cover;
   background-position: center;
 }
+.resto #bxlOuvert, .resto #parisOuvert, .resto #tokyoOuvert {
+  color: #9fa09b;
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-shadow: 1px 1px #494c4d;
+}
 
 /*-------------------contact----------------------*/
 form {
-  padding: 10px;
+  padding: 0 10% 5% 10%;
 }
 form label {
   padding: 5px;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 120%;
 }
 form select {
   padding: 5px;
   margin-left: 5px;
 }
-form legend {
+form .rox .choix {
   width: 100%;
 }
-form button {
+form .glyphicon {
+  color: white;
+  font-size: 2em;
+  line-height: 2em;
+  width: 3em;
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+}
+form .btn {
   background-color: #f55628;
   color: white;
   box-shadow: 2px 2px #9fa09b;
-  width: 200px;
+  width: 200px !important;
+  text-align: center;
 }
-form button:active {
+form .btn:active {
   transform: translateY(2px);
   box-shadow: 2px 2px #9fa09b !important;
   border: none !important;
@@ -335,10 +370,9 @@ form button:active {
 }
 
 /*-------------------footer-----------------------*/
-footer {
-  width: 94vw;
-  height: 22vh;
-  margin: 5% auto;
+.footer {
+  height: 30vh;
+  margin: 0 0 5% 0;
   background-color: #494c4d;
   color: #9fa09b;
   text-shadow: 1px 1px black;
@@ -347,42 +381,32 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-footer .left {
+.footer .left {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 100%;
 }
-footer .left .icon {
+.footer .left .icon {
   display: flex;
   flex-direction: row;
-  padding-right: 10%;
 }
-footer .left .icon a {
+.footer .left .icon a {
   text-decoration: none;
-  margin: 5%;
+  padding: 0 10%;
 }
-footer .left .icon a .fab {
-  font-size: 3vw;
+.footer .left .icon a .fab {
+  font-size: 3.5vw;
   color: #9fa09b;
   text-align: center;
 }
-footer .left .icon a .fab p {
+.footer .left .icon a .fab p {
   font-size: 2vw;
 }
-footer .img {
-  background-image: url("../images/icon.svg");
-  background-size: 20%;
-  background-position-y: 35%;
-  background-repeat: no-repeat;
-  height: 300%;
-  width: 200%;
-  position: relative;
-  bottom: 295%;
-  left: 10%;
-  align-self: stretch;
-  transform: rotate(-90deg);
+.footer .left .fas {
+  font-size: 5vw;
 }
 
 /*# sourceMappingURL=style.css.map */

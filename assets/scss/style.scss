@@ -15,22 +15,21 @@ $text: 'Source Sans Pro', sans-serif;
 body, html {
     margin: 0;
     padding: 0;
+    max-width: 1800px;
 }
 
 body {
     background-color: $lightGrey;
-    // background-image: url('../images/tableauNoir.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
+    background-image: url('../images/tableBois.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .row {
     margin: 0;
 }
 
 .container-fluid {
-    width: 94vw;
-    margin-top : 5%;
     padding : 2%;
     background: $white;
 }
@@ -38,8 +37,10 @@ body {
 /*-------------------header----------------------*/
 
 .jumbotron {
-    margin-top: 10px;
     height: 40vh;
+    @media screen and (max-width: 580px) {
+        height : 200px;
+    }
     background-image: url("../images/Jumbo.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -47,46 +48,49 @@ body {
     border-radius: 3px 3px 0 0;
     display: flex;
     align-items: center;
+    
     .containImg {
         width: 98%;
-        height: 98%;
+        height: 100%;
+        justify-content: space-around;
+        border-style: solid;
+        border-color: $darkGrey;
+        border-width: 2px 0;
+        display: flex;
         h1 {
             height: 100%;
             display: flex;
             align-items: center;
             font-family: $titre;
-            font-size: 8.5vw;
+            font-size: 7vw;
             background: rgba(255, 255, 255, 0.9);
             color: black;
             mix-blend-mode: screen;
             padding-left: 5%;
+            img {
+                width: 15vw;
+            }
         }
     }
-    .img {
-        width: 45%;
-        height : 180%;
-        position: relative;
-        top: -42.5%;
-        align-self: stretch;
-        background-image: url('../images/orange_icon.svg');
-        background-size: cover;
-        background-position-y: 35%;
-    }
+    
 }
 
-.nav {
-    margin-top: 0;
+nav {
+    margin-top: 5%;
     width: 100%;
-    height: 5vh;
-    z-index:10;
+    background-color: $white;
+    padding-top: 2%;
     li{
         width: 20%;
-        padding : 20px auto;
+        //padding : 20px auto;
         a {
             color: $darkGrey;
             text-align: center;
             font-family: $sousTitre;
-            font-size: 1.8vw;
+            font-size: 2vw;
+            @media screen and (max-width: 500px){
+                font-size: 12px;
+            }
             &:hover {
                 background-color: $orange;
                 color: $white;
@@ -101,6 +105,9 @@ body {
     font-family: $sousTitre;
     font-weight: bold;
     font-size: 3vw;
+    @media screen and (max-width: 500px){
+        font-size: 16px;
+    }
     text-align: center;
     color: $orange;
     text-shadow: 2px 2px $lightGrey;
@@ -109,7 +116,6 @@ body {
 
 /*-------------------page principale----------------------*/
 .mainHome {
-    margin-bottom: 20px;
     .panel {
         margin-top: 10px;
         font-family: $text;
@@ -127,8 +133,18 @@ body {
 }
 
 /*-------------------page restaurant----------------------*/
+#ici, #ParisBxl, #Tokyo {
+    font-family: $text;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: $lightGrey;
+    text-shadow: none;
+}
+
+
 .resto {
     font-family: $text;
+    color: $darkGrey;
     .panel-header {
         width: 100%;
         height: 500px;
@@ -146,8 +162,8 @@ body {
         background-size: cover;
     }
     .panel-body {
-        height: 350px;
-        padding: 15px;
+        height: 380px;
+        padding: 5%;
         background-color: #FFF;
     }
     .panel-footer {
@@ -169,36 +185,48 @@ body {
         background-size: cover;
         background-position: center;
     }
+    #bxlOuvert, #parisOuvert, #tokyoOuvert {
+        color: $lightGrey;
+        font-size: 1.2vw;
+        font-weight: bold;
+        text-shadow: 1px 1px $darkGrey;
+    }
 }
+
 
 /*-------------------contact----------------------*/
 
 form {
-    padding: 10px;
+    padding: 0 10% 5% 10%;
     label {
         padding : 5px;
         font-family: $text;
-        font-size: 120%;
+        //font-size: 10%;
     }
     select {
         padding: 5px;
         margin-left: 5px;
     }
-    legend {
-        width: 100%;
+    .rox{
+        .choix {
+            width: 100%;
+        }
     }
-    button {
+    .glyphicon {
+        color: $white;
+        font-size: 2em;
+        line-height : 2em;
+        width: 3em;
+        font-style: normal;
+        font-weight: normal;
+        position: relative;
+    }
+    .btn {
         background-color: $orange;
         color: $white;
         box-shadow: 2px 2px $lightGrey;
-        width: 200px;
-        // .glyphicon-envelope::before {
-        //     color: $white;
-        //     font-size: 2em;
-        //     font-style: normal;
-        //     font-weight: normal;
-        //     position: relative;
-        // }
+        width: 200px!important;
+        text-align: center;
         &:active {
             transform: translateY(2px);
             box-shadow: 2px 2px $lightGrey!important;
@@ -358,10 +386,9 @@ form {
 }
 
 /*-------------------footer-----------------------*/
-footer {
-    width: 94vw;
-    height: 22vh;
-    margin: 5% auto;
+.footer {
+    height: 30vh;
+    margin: 0 0 5% 0 ;
     background-color: $darkGrey;
     color: $lightGrey;
     text-shadow: 1px 1px black;
@@ -372,20 +399,19 @@ footer {
     .left {
         display: flex;
         flex-flow: column nowrap;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         width: 100vw;
+        height: 100%;
         .icon {
             display: flex;
             flex-direction: row;
-            padding-right: 10%;
             a{
                 text-decoration: none;
-                margin: 5%;
+                padding: 0 10%;
                 .fab{
-                    font-size: 3vw;
+                    font-size: 3.5vw;
                     color:$lightGrey;
-                    //padding: 10%;
                     text-align: center;
                     p {
                         font-size: 2vw;
@@ -393,18 +419,8 @@ footer {
                 }
             }
         }
+        .fas {
+            font-size : 5vw;
+        }
     }    
-    .img{
-        background-image: url('../images/icon.svg');
-        background-size: 20%;
-        background-position-y: 35%;
-        background-repeat: no-repeat;
-        height : 300%;
-        width: 200%;
-        position: relative;
-        bottom: 295%;
-        left: 10%;
-        align-self: stretch;
-        transform: rotate(-90deg);
-    }
 }
