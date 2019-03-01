@@ -246,14 +246,7 @@ form {
     //     // font-weight: normal;
     //     // position: relative;
     // }
-    .glyphicon-send:before {
-        content: "\e171";
-        color: $darkGrey;
-    }
     
-    .glyphicon-send:before {
-        content: "\e171";
-    }
     .btn {
         background-color: $lightGrey2;
         color: black;
@@ -264,6 +257,9 @@ form {
             transform: translateY(2px);
             //box-shadow: 2px 2px $orange!important;
             border: none!important;
+        }
+        .fas {
+            color:$darkGrey;
         }
     }
 }
