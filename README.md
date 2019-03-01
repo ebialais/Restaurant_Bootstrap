@@ -2,6 +2,11 @@
 
 Le travail a réaliser est un site vitrine d'une franchise (fictive) de restaurants. 
 
+![Aprecu grand ecran](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Aprecu petit ecran](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+[Lien du travail](https://ebialais.github.io/bootstrap-resto-website/)
+
 Demandes : 
   - le site doit être repsonsive
   - minimum 5 pages accessibles par une barre de navigation :
@@ -23,4 +28,4 @@ Objectifs :
  - popup qui récupère le prénom du visiteur pour afficher "bonjour ..."
  - dans partie restaurant : mention interactive, nous sommes le... le restaurant est ouvert/fermé
  
-GitHub page : 
+
