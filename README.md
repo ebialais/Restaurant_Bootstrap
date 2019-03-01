@@ -12,9 +12,11 @@ Le travail a réaliser est un site vitrine d'une franchise (fictive) de restaura
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-
-
 [Lien du travail](https://ebialais.github.io/bootstrap-resto-website/)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 Demandes : 
   - le site doit être repsonsive
