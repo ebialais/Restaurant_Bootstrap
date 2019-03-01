@@ -259,11 +259,11 @@ form {
     }
     .badge {
         float: right;
-        background-color: $orange;
-        height: 100%;
+        width : 42px;
+        background-color: $lightGrey2;
         display: flex;
         align-items: center;
-
+        color: $darkGrey;
     }
 }
 

@@ -245,10 +245,11 @@ form .btn:active {
 }
 .list-group .badge {
   float: right;
-  background-color: #f55628;
-  height: 100%;
+  width: 42px;
+  background-color: #e4e4e3;
   display: flex;
   align-items: center;
+  color: #494c4d;
 }
 
 /*--------------------Gallerie----------------------*/
