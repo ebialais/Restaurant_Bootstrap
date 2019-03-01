@@ -128,7 +128,7 @@ nav li a:hover {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5vw;
   font-weight: normal;
-  color: #9fa09b;
+  color: #494c4d;
   text-shadow: none;
 }
 
@@ -177,10 +177,10 @@ nav li a:hover {
   background-position: center;
 }
 .resto #bxlOuvert, .resto #parisOuvert, .resto #tokyoOuvert {
-  color: #9fa09b;
+  color: #494c4d;
   font-size: 1.2vw;
   font-weight: bold;
-  text-shadow: 1px 1px #494c4d;
+  text-shadow: 1px 1px #9fa09b;
 }
 
 /*-------------------contact----------------------*/
@@ -208,15 +208,14 @@ form .glyphicon {
   position: relative;
 }
 form .btn {
-  background-color: #f55628;
+  background-color: #494c4d;
   color: white;
-  box-shadow: 2px 2px #9fa09b;
+  box-shadow: 2px 2px #f55628;
   width: 200px !important;
   text-align: center;
 }
 form .btn:active {
   transform: translateY(2px);
-  box-shadow: 2px 2px #9fa09b !important;
   border: none !important;
 }
 

@@ -137,7 +137,7 @@ nav {
     font-family: $text;
     font-size: 1.5vw;
     font-weight: normal;
-    color: $lightGrey;
+    color: $darkGrey;
     text-shadow: none;
 }
 
@@ -186,10 +186,10 @@ nav {
         background-position: center;
     }
     #bxlOuvert, #parisOuvert, #tokyoOuvert {
-        color: $lightGrey;
+        color: $darkGrey;
         font-size: 1.2vw;
         font-weight: bold;
-        text-shadow: 1px 1px $darkGrey;
+        text-shadow: 1px 1px $lightGrey;
     }
 }
 
@@ -222,14 +222,14 @@ form {
         position: relative;
     }
     .btn {
-        background-color: $orange;
+        background-color: $darkGrey;
         color: $white;
-        box-shadow: 2px 2px $lightGrey;
+        box-shadow: 2px 2px $orange;
         width: 200px!important;
         text-align: center;
         &:active {
             transform: translateY(2px);
-            box-shadow: 2px 2px $lightGrey!important;
+            //box-shadow: 2px 2px $orange!important;
             border: none!important;
         }
     }
