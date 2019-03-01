@@ -212,7 +212,7 @@ form {
             width: 100%;
         }
     }
-    .glyphicon {
+    /* .glyphicon {
         color: $white;
         font-size: 2em;
         line-height : 2em;
@@ -220,10 +220,10 @@ form {
         font-style: normal;
         font-weight: normal;
         position: relative;
-    }
+    } */
     .btn {
-        background-color: $darkGrey;
-        color: $white;
+        background-color: $lightGrey;
+        color: black;
         box-shadow: 2px 2px $orange;
         width: 200px!important;
         text-align: center;
@@ -387,7 +387,7 @@ form {
 
 /*-------------------footer-----------------------*/
 .footer {
-    height: 30vh;
+    height: 34vh;
     margin: 0 0 5% 0 ;
     background-color: $darkGrey;
     color: $lightGrey;
@@ -403,24 +403,40 @@ form {
         justify-content: center;
         width: 100vw;
         height: 100%;
+        h3 {
+            padding-top: 1%;
+            font-size: 1.8vw;
+            @media screen and (max-width: 500px) {
+                font-size: 20px;
+            }
+        }
         .icon {
+            width: 30vw;
             display: flex;
             flex-direction: row;
-            a{
+            justify-content: space-around;
+            margin: 1%;
+            .fab {
                 text-decoration: none;
-                padding: 0 10%;
-                .fab{
-                    font-size: 3.5vw;
-                    color:$lightGrey;
-                    text-align: center;
-                    p {
-                        font-size: 2vw;
+                color:$lightGrey;
+                font-size: 3.5vw;
+                @media screen and (max-width: 500px) {
+                    font-size: 40px;
+                }
+                text-align: center;
+                p {
+                    font-size: 2vw;
+                    @media screen and (max-width: 500px) {
+                        font-size: 14px;
                     }
                 }
             }
         }
         .fas {
             font-size : 5vw;
+            @media screen and (max-width: 500px) {
+                font-size: 40px;
+            }
         }
     }    
 }

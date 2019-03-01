@@ -186,6 +186,15 @@ nav li a:hover {
 /*-------------------contact----------------------*/
 form {
   padding: 0 10% 5% 10%;
+  /* .glyphicon {
+      color: $white;
+      font-size: 2em;
+      line-height : 2em;
+      width: 3em;
+      font-style: normal;
+      font-weight: normal;
+      position: relative;
+  } */
 }
 form label {
   padding: 5px;
@@ -198,18 +207,9 @@ form select {
 form .rox .choix {
   width: 100%;
 }
-form .glyphicon {
-  color: white;
-  font-size: 2em;
-  line-height: 2em;
-  width: 3em;
-  font-style: normal;
-  font-weight: normal;
-  position: relative;
-}
 form .btn {
-  background-color: #494c4d;
-  color: white;
+  background-color: #9fa09b;
+  color: black;
   box-shadow: 2px 2px #f55628;
   width: 200px !important;
   text-align: center;
@@ -370,7 +370,7 @@ form .btn:active {
 
 /*-------------------footer-----------------------*/
 .footer {
-  height: 30vh;
+  height: 34vh;
   margin: 0 0 5% 0;
   background-color: #494c4d;
   color: #9fa09b;
@@ -388,24 +388,48 @@ form .btn:active {
   width: 100vw;
   height: 100%;
 }
+.footer .left h3 {
+  padding-top: 1%;
+  font-size: 1.8vw;
+}
+@media screen and (max-width: 500px) {
+  .footer .left h3 {
+    font-size: 20px;
+  }
+}
 .footer .left .icon {
+  width: 30vw;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 1%;
 }
-.footer .left .icon a {
+.footer .left .icon .fab {
   text-decoration: none;
-  padding: 0 10%;
-}
-.footer .left .icon a .fab {
-  font-size: 3.5vw;
   color: #9fa09b;
+  font-size: 3.5vw;
   text-align: center;
 }
-.footer .left .icon a .fab p {
+@media screen and (max-width: 500px) {
+  .footer .left .icon .fab {
+    font-size: 40px;
+  }
+}
+.footer .left .icon .fab p {
   font-size: 2vw;
+}
+@media screen and (max-width: 500px) {
+  .footer .left .icon .fab p {
+    font-size: 14px;
+  }
 }
 .footer .left .fas {
   font-size: 5vw;
+}
+@media screen and (max-width: 500px) {
+  .footer .left .fas {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
