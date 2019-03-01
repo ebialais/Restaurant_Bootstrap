@@ -154,12 +154,14 @@ nav li a:hover {
   height: 500px;
 }
 .resto #imgRestoBxl {
-  background-image: url("../images/PasrestoBruxelles.jpg");
+  background-image: url("../images/restoBruxelles.jpg");
   background-size: cover;
+  background-position: center;
 }
 .resto #imgRestoParis {
   background-image: url("../images/restoParis.jpg");
   background-size: cover;
+  background-position: center;
 }
 .resto #imgRestoTokyo {
   background-image: url("../images/restoTokyo.jpg");
@@ -175,17 +177,17 @@ nav li a:hover {
   height: 300px;
 }
 .resto #mapBruxelles {
-  background-image: url("../images/mapBruxelles.png");
+  background-image: url("../images/bruxelles.webp");
   background-size: cover;
   background-position: center;
 }
 .resto #mapParis {
-  background-image: url("../images/mapParis.png");
+  background-image: url("../images/paris.webp");
   background-size: cover;
   background-position: center;
 }
 .resto #mapTokyo {
-  background-image: url("../images/mapTokyo.png");
+  background-image: url("../images/tokyo.webp");
   background-size: cover;
   background-position: center;
 }
