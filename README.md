@@ -2,20 +2,6 @@
 
 Le travail a réaliser est un site vitrine d'une franchise (fictive) de restaurants. 
 
-----------------------------------------------------------------------------------------------------------------------------------------
-
-![Aprecu grand ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20grand.png)
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
-![Aprecu petit ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20petit.png)
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
-[Lien du travail](https://ebialais.github.io/bootstrap-resto-website/)
-
-----------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 Demandes : 
@@ -38,5 +24,22 @@ Objectifs :
  - lighthouse : 80% sur toutes les catégories
  - popup qui récupère le prénom du visiteur pour afficher "bonjour ..."
  - dans partie restaurant : mention interactive, nous sommes le... le restaurant est ouvert/fermé
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+![Aprecu grand ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20grand.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+![Aprecu petit ecran](https://github.com/ebialais/bootstrap-resto-website/blob/master/assets/images/Apercu%20petit.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+[Lien du travail](https://ebialais.github.io/bootstrap-resto-website/)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
  
+ https://ebialais.github.io/bootstrap-resto-website/
 
