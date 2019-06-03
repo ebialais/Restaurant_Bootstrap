@@ -29,7 +29,7 @@ Demandes :
 
 Objectifs :
  - style bootstrap (vous utiliserez le CDN)
- - + 1 fichier CSS pour tout le site
+ - 1 fichier CSS pour tout le site
  - liens relatifs aux autres pages
  - fichiers rangés dans des dossiers (assets, puis css, js et img dedans)
  - utilisation de Font Awesome
